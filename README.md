@@ -28,8 +28,9 @@ A fine-tuned **LLM-based email classifier** that can categorize emails into **Sp
 
 # Evaluation metrics:
 
-> **Workflow Diagram**
+> **Evaluation (F1 - Loss Min.)**
 >
-> ![Application Workflow](workflow.png)
+> ![](pictures/eval.png)
 
 ---
+
