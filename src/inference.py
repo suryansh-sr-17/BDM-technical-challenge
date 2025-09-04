@@ -1,5 +1,6 @@
 from transformers import AutoTokenizer
-from fastllm import FastLanguageModel  # if using your optimized wrapper
+from fastllm import FastLanguageModel
+import llama_cpp
 
 tokenizer = AutoTokenizer.from_pretrained("path/to/model")
 model = FastLanguageModel.for_inference("path/to/model")
