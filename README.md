@@ -9,24 +9,69 @@ A fine-tuned **LLM-based email classifier** that can categorize emails into **Sp
 
 ---
 
-## 📂 Project Structure
+## 📃 Instruction:
+
+- 🤖 Run the mode finetuning script using local GPU or services like google colab, etc.
+- 📥 Download the model using the last two code blocks
+- 🌐 Create an inference script using the provided inference scrip or using your own preferred orchestrator.
+
+---
+
+## 📂 Project Structure:
 
 ```bash
 .
-├── data/
-│   ├── raw/                  # Raw datasets
-│   ├── processed/            # Final merged dataset (all_datasets.jsonl)
-├── scripts/
-│   ├── convert_datasets.py   # Preprocess & merge datasets
-│   ├── train.py              # Fine-tuning script
-│   ├── inference.py          # Run inference on new emails
-├── models/                   # Saved fine-tuned models
-└── README.md                 # Project documentation
+|   .gitignore
+|   inspect_dataset.py
+|   project_structure.txt
+|   README.md
+|   
++---configs
+|   \---data
+|           yaml
+|           
++---data
+|   +---backup
+|   |       enron_hf.jsonl
+|   |       opp115_mapped.jsonl
+|   |       spamassassin_mapped.jsonl
+|   |       
+|   +---interim
+|   |       enron_hf.jsonl
+|   |       enron_hf_1.jsonl
+|   |       opp115_mapped_1.jsonl
+|   |       spamassassin_mapped_1.jsonl
+|   |       
+|   +---processed
+|   |       all_datasets.jsonl
+|   |       
+|   \---raw
+|       |   enron_hf.csv
+|       |   opp115.parquet
+|       |   
+|       \---spamassassin
+|               train.jsonl
+|               
++---scripts
+|       convert_datasets.py
+|       convert_dataset_mapped.py
+|       debug_jsonl.py
+|       jsonl_repair.py
+|       merger.py
+|       preprocess_enron.py
+|       preprocess_opp115.py
+|       preprocess_spamassassin.py
+|       repair.py
+|       utils_preprocessing.py
+|       
+\---src
+        inference.py
+        model_training_script.ipynb
 ```
 
 ---
 
-# Evaluation metrics:
+## 📜 Evaluation metrics:
 
 > **Evaluation (F1 - Loss Min.)**
 >
@@ -34,7 +79,7 @@ A fine-tuned **LLM-based email classifier** that can categorize emails into **Sp
 
 ---
 
-# Computational Resources and Parameters trained:
+## 💻 Computational Resources and Parameters trained:
 
 > **Peak Computational Usage**
 >
@@ -46,7 +91,7 @@ A fine-tuned **LLM-based email classifier** that can categorize emails into **Sp
 
 ---
 
-# Output Inference and data processing:
+## ⌛ Output Inference and data processing:
 
 > **Output on sample mail**
 >
@@ -59,5 +104,6 @@ A fine-tuned **LLM-based email classifier** that can categorize emails into **Sp
 > ![](pictures/info2.png)
 
 ---
+
 
 
