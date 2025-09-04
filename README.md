@@ -34,3 +34,30 @@ A fine-tuned **LLM-based email classifier** that can categorize emails into **Sp
 
 ---
 
+# Computational Resources and Parameters trained:
+
+> **Peak Computational Usage**
+>
+> ![](pictures/compute.png)
+
+> **Trainable Parameters**
+>
+> ![](pictures/params.png)
+
+---
+
+# Output Inference and data processing:
+
+> **Output on sample mail**
+>
+> ![](pictures/output1.png)
+
+> **Dataset loading and pre-processing**
+>
+> ![](pictures/data_info.png)
+> ![](pictures/info1.png)
+> ![](pictures/info2.png)
+
+---
+
+
